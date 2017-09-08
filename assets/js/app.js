@@ -14492,6 +14492,13 @@ window.$ = _jquery2.default;
 
 (0, _jquery2.default)(document).foundation();
 
+!function () {
+   var href = location.href;
+   var pgurl = href.substr(href.lastIndexOf('/') + 1);
+   // match all the anchors on the page with the html file name
+   (0, _jquery2.default)('a[href="' + pgurl + '"]').addClass('active');
+}();
+
 /***/ }),
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
